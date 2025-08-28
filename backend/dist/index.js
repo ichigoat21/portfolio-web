@@ -6,9 +6,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const dotenv_1 = __importDefault(require("dotenv"));
 require("./server");
+require("./seed");
 dotenv_1.default.config();
 const app = (0, express_1.default)();
-console.log(process.env.CLIENT_ID);
 app.listen(3000, () => {
     console.log("server started");
 });
